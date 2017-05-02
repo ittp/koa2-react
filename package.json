@@ -1,6 +1,6 @@
 {
   "name": "koa2-react",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A porject with koa2,react,mobx on server side render",
   "repository": "https://github.com/windwithfo/koa2-react.git",
   "main": "server/server.js",

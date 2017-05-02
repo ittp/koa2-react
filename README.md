@@ -4,7 +4,7 @@ A porject with koa2,react,mobx on server side render
 ***
 Install with:
 
-    npm install webpack2-jquery3
+    npm install koa2-react
 
 Usage Example
 ===
@@ -50,5 +50,3 @@ License
 [MIT](http://opensource.org/licenses/MIT)
 
 Copyright (c) 2017 dongkunshan
-
-
