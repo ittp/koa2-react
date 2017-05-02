@@ -1,0 +1,28 @@
+extends layouts/base.pug
+block head
+    include includes/head.pug
+block style
+    link(href="/assets/login/index.css" rel="stylesheet")
+block content
+    .content
+        .row
+            label 账号：
+            input(maxlength="20" id="username" value="emiya")
+        .row
+            label 密码：
+            input(type="password" maxlength="20" id="password" value="12345")
+        button.btn 登录
+block jslib
+    script(src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js")
+    script(type="text/javascript").
+        $('.btn').on('click', function () {
+            $.post('/user/api/login', {
+                username: $('#username').val().trim(),
+                password: $('#password').val()
+            }, function (ret) {
+                if (ret && ret.code === 0) {
+                    //window.location.href = ret.jump;
+                }
+                console.log(ret);
+            });
+        });

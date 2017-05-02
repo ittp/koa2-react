@@ -1,0 +1,11 @@
+extends layouts/base.pug
+block head
+    include includes/head.pug
+block style
+    link(href=styles.vendor rel="stylesheet")
+    link(href=styles.detail rel="stylesheet")
+block content 
+    #root !{reactHtml}
+block jslib
+    script(src=javascript.vendor)
+    script(src=javascript.detail)
