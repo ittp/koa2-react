@@ -1,6 +1,6 @@
 .DS_Store
 build
-build.zip
+*.zip
 .editorconfig
 .idea
 webpack-assets.json

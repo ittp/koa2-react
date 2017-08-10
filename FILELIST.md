@@ -41,7 +41,6 @@ configs                            配置文件夹
     |-client.js                    客户端刷新脚本
     |-isomorphic.config.js         同构插件配置
     |-nodemon.json                 nodemon配置文件
-    |-stylelintrc.config.js        stylelint规则配置
     |-webpack.base.config.js       打包基础配置文件
     |-webpack.config.js            开发打包配置文件
     |-webpack.prod.config.js       发布打包配置文件(前端)
@@ -52,20 +51,24 @@ server                         后端文件夹
     |    |-db.config.js        数据库配置
     |    |-log.config.js       日志配置
     |
-    |-logs                     日志文件夹(git不维护此文件)
-    |-moudles                  实体类文件
-    |    |-Base_redis.js       redis备用
-    |    |-Base.js             基类
-    |    |-House.js            房屋实体类
-    |    |-User.js             用户实体类
-    |
-    |-routers                  路由分发文件夹
+    |-controllers              路由分发文件夹
     |    |-apiController       api路由
     |    |-detailController    详情页路由
     |    |-indexController     首页路由
     |    |-listController      列表页路由
     |    |-RedisStore          session存储
     |    |-userController      用户页路由
+    |
+    |-middleware               中间价文件夹
+    |    |-assets.js           静态资源中间件
+    |    |-webpack.assets.json 前端静态资源版本(分布部署用,git不维护此文件)
+    |
+    |-logs                     日志文件夹(git不维护此文件)
+    |-moudles                  实体类文件
+    |    |-Base_redis.js       redis备用
+    |    |-Base.js             基类
+    |    |-House.js            房屋实体类
+    |    |-User.js             用户实体类
     |
     |-release.js               启动文件(发布)
     |-router.js                路由入口分发
@@ -88,9 +91,10 @@ views                          页面文件夹
 .babelrc                       babel配置
 .gitignore                     git忽略目录配置
 build.zip                      前端静态资源包(分布部署用,git不维护此文件)
+.stylelintrc.sj                stylelint规则配置
 FILELIST.md                    文件清单
+LICENSE                        license文件
 package.json                   项目信息文件
 README.md                      项目说明文件
 RELEASENOTE.md                 项目版本记录文件
-webpack.assets.json            前端静态资源版本(分布部署用,git不维护此文件)
 ```

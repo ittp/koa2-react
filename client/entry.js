@@ -4,16 +4,19 @@
  */
 
 let pages = {
-    index: 'client/index/index.jsx',
-    detail: 'client/detail/detail.jsx',
-    list: 'client/list/list.jsx'
+  // entry
+  list: 'client/list/list.jsx',
+  house: 'client/house/house.jsx',
+  houselist: 'client/house/list.jsx',
+  index: 'client/index/index.jsx',
+  detail: 'client/detail/detail.jsx'
 };
 
 let vendors = {
-    vendor: ['react', 'react-dom']
+  vendor: ['react', 'react-dom', 'mobx']
 };
 
 export default {
-    pages,
-    vendors
+  pages,
+  vendors
 };

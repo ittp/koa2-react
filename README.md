@@ -5,6 +5,10 @@ A porject with koa2,react,mobx on server side render
 Install with:
 
     npm install koa2-react
+    
+If you need to ues redis and mongodb,updata the config file in **server/config/db.config.js** and make it turn on in **config/config.js**
+
+	db: true
 
 Usage Example
 ===
@@ -26,6 +30,9 @@ Run develop
 
 Build release
 
+    #先运行lint,避免语法错误导致打包失败耽误时间
+    npm run lint
+    #lint通过后再运行
     npm run build
 
 Publish

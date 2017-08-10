@@ -1,5 +1,18 @@
 Release Note
 ===
+v1.0.5
+---
+`2017.08.10`
+**merge from oschina=>github**
+
+fix indent&build
+use material-ui normal page
+add generate
+add mock data
+use antd-mobile for single page
+use antd for multi page
+***
+
 v1.0.3
 ---
 `2017.04.24`

@@ -9,15 +9,15 @@ import logo       from 'assets/img/logo.jpg';
 
 @observer
 class DetailPage1 extends React.Component {
-    render() {
-        return (
-            <div>
-                <img src={logo}/>
-                this is {this.props.store.text}<br/>
-                userid is {this.props.userid}
-            </div>
-        );
-    }
+  render() {
+    return (
+      <div>
+        <img src={logo}/>
+        this is {this.props.store.page1Text}<br/>
+        userid is {this.props.userid}
+      </div>
+    );
+  }
 }
 
 export default DetailPage1;
