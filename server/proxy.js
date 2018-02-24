@@ -4,7 +4,7 @@
  */
 
 import proxy  from 'koa-proxies';
-import config from '../configs/config';
+import config from '../config/config';
 
 let proxys = [];
 
